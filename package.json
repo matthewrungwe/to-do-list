@@ -1,0 +1,18 @@
+{
+  "name": "to-do-list",
+  "version": "1.0.0",
+  "description": "A To Do List Application",
+  "main": "server.js",
+  "scripts": {
+    "less": "lessc ./src/app/less/main.less ./src/app/css/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matthew Rungwe",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "express": "^4.17.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1"
+  }
+}
