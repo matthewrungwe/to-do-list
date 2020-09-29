@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A To Do List Web Application">
     <title>To Do List</title>
+
+    <!-- 3rd Party Styles -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+    
+    <!-- Individual Styles -->
+    <link rel="stylesheet" href="./src/app/css/main.css">
 </head>
 <body>
-    
+
+    <!-- Main -->
+    <main>
+        <section id="add-tasks">
+            <div class="input-group mb-3 col-sm-6">
+                <input type="text" id="task" class="form-control" placeholder="Enter your task" aria-label="Task input" aria-describedby="add-btn">
+                <div class="input-group-append">
+                  <button class="add-btn btn btn-outline-secondary" type="button" id="add-btn">Button</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="display-tasks">
+            <div class="display">
+
+            </div>
+        </section>
+    </main>
+
+    <!-- 3rd Party Scripts -->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Individual Scripts -->
+    <script src="./src/app/js/main.js"></script>
 </body>
 </html>
