@@ -14,34 +14,40 @@
     <link rel="stylesheet" href="./src/app/css/main.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <nav id="nav">
+    <div class="row">
+        <div id="create" class="col-md-7 col-sm-12">
+            <!-- Header -->
+            <header>
+                <nav id="nav">
+        
+                </nav>
+        
+                <section id="banner">
+        
+                </section>
+            </header>
 
-        </nav>
-
-        <section id="banner">
-
-        </section>
-    </header>
-
-    <!-- Main -->
-    <main>
-        <section id="add-tasks">
-            <div class="input-group mb-3 col-sm-5 col-md-4">
-                <input type="text" id="task" class="form-control" placeholder="Enter your task" aria-label="Task input" aria-describedby="add-btn" autofocus>
-                <div class="input-group-append">
-                  <button class="add-btn btn btn-outline-secondary" type="button" id="add-btn"><i class="fa fa-plus" aria-hidden="true"></i></button>
+            <section id="add-tasks">
+                <div class="input-group mb-3" style="width: 90%;">
+                    <input type="text" id="task" class="form-control" placeholder="Enter your task" aria-label="Task input" aria-describedby="add-btn" autofocus>
+                    <div class="input-group-append">
+                      <button class="add-btn btn btn-outline-secondary" type="button" id="add-btn"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
-        <section id="display-tasks">
-            <div class="display">
+        <div id="display" class="col-md-5 col-sm-12">
+             <!-- Main -->
+            <main>
+                <section id="display-tasks">
+                    <div class="display">
 
-            </div>
-        </section>
-    </main>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>    
 
     <!-- 3rd Party Scripts -->
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>

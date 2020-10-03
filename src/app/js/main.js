@@ -2,15 +2,43 @@ let taskInput = document.querySelector('#task');
 let addBtn = document.querySelector('.add-btn');
 let display = document.querySelector('.display');
 
-const addTask = (task) => {
-    let  newPara = document.createElement('p');
+let trashBtn = "";
 
-    newPara.innerHTML = task;
-    display.appendChild(newPara);
+const taskList = [];
+
+const initialiseTaskBtns = () => {
+    trashBtn = document.querySelector('.trash');
+
+    trashBtn.addEventListener('click', () => {
+        console.log('Button CLicked');
+        trashBtn.parentNode.parentNode.remove();
+    });
+    
 }
+
+const addTask = (task) => {
+    let  newDivEl = document.createElement('div');
+
+    newDivEl.innerHTML = `
+        <div class="card" style="width: 90%;">
+            <div class="card-body">
+                <p class="card-text">${task}</p>
+                <button class="btn btn-success check"><i class="fa fa-check"></i></button>
+                <button class="btn btn-secondary edit"><i class="fa fa-edit"></i></button>
+                <button class="btn btn-secondary trash"><i class="fa fa-trash"></i></button>
+            </div>
+        </div>
+    `;
+    display.appendChild(newDivEl);
+
+    initialiseTaskBtns();
+};
 
 addBtn.addEventListener('click', () => {
     let taskValue = taskInput.value;
 
-    addTask(taskValue);
-})
+    if(taskValue) {
+        addTask(taskValue);
+    }    
+});
+
