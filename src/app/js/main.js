@@ -20,12 +20,19 @@ const addTask = (task) => {
     let  newDivEl = document.createElement('div');
 
     newDivEl.innerHTML = `
-        <div class="card" style="width: 90%;">
+        <div class="card bg-dark text-light" style="width: 100%;">
             <div class="card-body">
                 <p class="card-text">${task}</p>
-                <button class="btn btn-success check"><i class="fa fa-check"></i></button>
-                <button class="btn btn-secondary edit"><i class="fa fa-edit"></i></button>
-                <button class="btn btn-secondary trash"><i class="fa fa-trash"></i></button>
+                <div class="row">
+                    <div class="col-sm">
+                    adgasdtttttttghsf
+                    </div>
+                    <div class="col-sm">
+                        <button class="btn btn-success check"><i class="fa fa-check"></i></button>
+                        <button class="btn btn-secondary edit"><i class="fa fa-edit"></i></button>
+                        <button class="btn btn-secondary trash"><i class="fa fa-trash"></i></button>
+                    </div>
+                </div>
             </div>
         </div>
     `;
