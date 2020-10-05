@@ -8,7 +8,7 @@ header {
 }
 #banner {
   height: 100%;
-  background-image: url('../../assets/images/bg/white.webp');
+  background-color: #343a40;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
