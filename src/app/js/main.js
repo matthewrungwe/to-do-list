@@ -29,7 +29,7 @@ const addTask = (task) => {
                     </div>
                     <div class="col-sm ">
                         <button class="btn btn-success check"><i class="fa fa-check"></i></button>
-                        <button class="btn btn-secondary edit"><i class="fa fa-edit"></i></button>
+                        <button class="btn btn-secondary edit" hidden><i class="fa fa-edit"></i></button>
                         <button class="btn btn-secondary trash"><i class="fa fa-trash"></i></button>
                     </div>
                 </div>
