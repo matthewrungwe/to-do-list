@@ -6,6 +6,18 @@ let trashBtn = "";
 
 const taskList = [];
 
+// This function adds each task created to the task list as an object.
+// A unique id is also created for each task created
+const addTaskToList = (task) => {
+    let numListItems = taskList.length;
+    let taskObject = {
+        id: ++numListItems,
+        content: task
+    };
+
+    taskList.push(taskObject);
+};
+
 const initialiseTaskBtns = () => {
     trashBtn = document.querySelector('.trash');
 
@@ -14,7 +26,7 @@ const initialiseTaskBtns = () => {
         trashBtn.parentNode.parentNode.remove();
     });
     
-}
+};
 
 const addTask = (task) => {
     let  newDivEl = document.createElement('div');
@@ -45,6 +57,7 @@ addBtn.addEventListener('click', () => {
     let taskValue = taskInput.value;
 
     if(taskValue) {
+        addTaskToList(taskValue);
         addTask(taskValue);
     }    
 });
