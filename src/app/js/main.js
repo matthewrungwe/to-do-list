@@ -24,10 +24,10 @@ const addTask = (task) => {
             <div class="card-body">
                 <p class="card-text">${task}</p>
                 <div class="row">
-                    <div class="col-sm">
-                    adgasdtttttttghsf
+                    <div class="col-sm time">
+                    
                     </div>
-                    <div class="col-sm">
+                    <div class="col-sm ">
                         <button class="btn btn-success check"><i class="fa fa-check"></i></button>
                         <button class="btn btn-secondary edit"><i class="fa fa-edit"></i></button>
                         <button class="btn btn-secondary trash"><i class="fa fa-trash"></i></button>

@@ -13,3 +13,16 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
 }
+#add-tasks {
+  margin-top: 10px;
+}
+input[id="task"] {
+  height: 55px;
+}
+#display-tasks .display {
+  display: flex;
+  flex-flow: column;
+}
+#display-tasks .display .card {
+  margin-top: 10px;
+}
