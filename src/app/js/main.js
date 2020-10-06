@@ -22,10 +22,9 @@ const initialiseTaskBtns = () => {
     trashBtn = document.querySelector('.trash');
 
     trashBtn.addEventListener('click', () => {
-        console.log('Button CLicked');
-        trashBtn.parentNode.parentNode.remove();
+        console.log('Trash Button Clicked');
+        trashBtn.parentNode.parentNode.parentNode.parentNode.remove();
     });
-    
 };
 
 const addTask = (task) => {
